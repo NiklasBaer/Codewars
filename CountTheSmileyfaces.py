@@ -4,8 +4,12 @@ def Count_smileys(arr):
         print(Smiley)
         HatAugen = ":" in Smiley or ";" in Smiley
         print(HatAugen)
-        
-    return 
+        HatMund = ")" in Smiley or "(" in Smiley or "D" in Smiley
+        print(HatMund)
+        if HatMund == True and HatAugen == True:
+            Count = Count + 1
+        print(Count)
+    return Count
 
 
 
