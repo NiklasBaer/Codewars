@@ -1,6 +1,6 @@
 import unittest
 
-from ArrayPlusArray import array_plus_array
+from src.ArrayPlusArray import array_plus_array
 
 class TestArrayPlusArray(unittest.TestCase):
     

@@ -1,7 +1,7 @@
 
 import unittest
 
-from SumFactorial import sum_factorial
+from src.SumFactorial import sum_factorial
 
 class TestSumFactorial(unittest.TestCase):
     

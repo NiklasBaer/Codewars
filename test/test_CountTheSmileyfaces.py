@@ -1,6 +1,6 @@
 import unittest
 
-from CountTheSmileyfaces import count_smileys
+from src.CountTheSmileyfaces import count_smileys
 
 class TestCountTheSmileyfaces(unittest.TestCase):
 

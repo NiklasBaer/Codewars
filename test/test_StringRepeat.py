@@ -1,6 +1,6 @@
 import unittest
 
-from StringRepeat import repeat_str
+from src.StringRepeat import repeat_str
 
 class TestStringRepeat(unittest.TestCase):
     

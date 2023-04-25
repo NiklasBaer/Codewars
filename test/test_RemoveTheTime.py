@@ -1,6 +1,6 @@
 import unittest
 
-from RemoveTheTime import shorten_to_date
+from src.RemoveTheTime import shorten_to_date
 
 class TestRemoveTheTime(unittest.TestCase):
     

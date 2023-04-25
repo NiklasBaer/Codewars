@@ -1,6 +1,6 @@
 import unittest
 
-from RemoveFirstAndLastCharacter import remove_char
+from src.RemoveFirstAndLastCharacter import remove_char
 
 class TestRemoveFirstAndLastCharacter(unittest.TestCase):
     

@@ -1,6 +1,6 @@
 import unittest
 
-from SimpleMultiplication import simple_multiplication
+from src.SimpleMultiplication import simple_multiplication
 
 
 class TestSimpleMultiplication(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 
-from RemoveStringSpaces import no_space
+from src.RemoveStringSpaces import no_space
 
 class TestRemoveStringsSpaces(unittest.TestCase):
     
