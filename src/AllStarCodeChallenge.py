@@ -8,6 +8,7 @@ def rotate(s):
         x.append(y)
         xstring = "".join(x)
         t = output.append(xstring)
+        print(output)
     return output
 
         
@@ -21,4 +22,4 @@ def rotate(s):
 
 
 
-rotate("Hello")
+rotate("___")
