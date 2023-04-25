@@ -23,9 +23,10 @@ def length_of_railway(sounds):
 
             if Im_Bahnhof == False:
                 Geschwindigkeit = Geschwindigkeit + 20
+            elif Im_Bahnhof == True:
+               Geschwindigkeit = Geschwindigkeit +10
             else:
-                Geschwindigkeit = Geschwindigkeit +10
-                
+                pass                
                 
                 
         if len(Geräusche) == 0:
