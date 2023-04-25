@@ -19,7 +19,3 @@ def count_smileys(arr):
         
     return Count
 
-
-
-count_smileys([':)',':(',':D',':O',':;'])
-count_smileys([";o)"])
