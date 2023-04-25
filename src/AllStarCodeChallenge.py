@@ -1,3 +1,5 @@
+
+
 def rotate(s):
     if len(s) == 0:
         return []
@@ -8,18 +10,5 @@ def rotate(s):
         x.append(y)
         xstring = "".join(x)
         t = output.append(xstring)
-        print(output)
     return output
 
-        
-
-
-
-
-
-
-
-
-
-
-rotate("___")
