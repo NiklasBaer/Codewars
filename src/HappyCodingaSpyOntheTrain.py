@@ -2,6 +2,8 @@ def length_of_railway(sounds):
     #Banhof = Rein or Raus 呜呜呜
     #Auf_Schiene = 10 or 20 哐当
     Geräusche = list(sounds)
+    if sounds == []:
+        return[]
     print(Geräusche)
     
     Geschwindigkeit = 0
