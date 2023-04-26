@@ -1,4 +1,6 @@
 def evaluate(equation):
+    if equation == [""] or equation == "":
+        return None
     Liste_ohne_Leerzeichen = "".join(equation.split())
     geteilt = Liste_ohne_Leerzeichen.split("@")
     return Rechnen(geteilt)
@@ -28,6 +30,5 @@ def Rechnen(moded_List):
         moded_List.insert(0, zwischenergebnis)        
         
     ergebnis = moded_List[0]
-    
+
     return ergebnis
-    
