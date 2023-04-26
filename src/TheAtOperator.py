@@ -1,20 +1,17 @@
-def evaluate(equation):
+def Liste_Bereitstellen(equation):
     equation = equation
-    x = "".join(equation.split())
-    moded_lis = x.replace("@", "")
-    ls1 = list(moded_lis)
+    Liste_ohen_Leerzeichen = "".join(equation.split())
+    moded_List = Liste_ohen_Leerzeichen.replace("@", "")
+    Prüfen_Plus_Minus(moded_List)
     
-    A = ls1.pop(0)
-    B = ls1.pop(0)
-    if A == "-":
-        print("Test")
-        A = "-" + ls1.pop(0)
-        
-    if B == "-":
-        print("Test2")
-        B = "-" + ls1.pop(0)
+def Prüfen_Plus_Minus(moded_List):
+    print(moded_List)
     
-    print(A, B)
-    print(ls1)
-    
-evaluate("-1 @ -1 @ 1")
+
+
+
+def evaluate(moded_List):
+    pass
+
+
+Liste_Bereitstellen("1 @ 1")
