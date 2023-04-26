@@ -6,16 +6,16 @@ def length_of_railway(sounds):
     if sounds == [] or sounds == "":
         return[]
     print(Geräusche)
-    
     Geschwindigkeit = 0
     Im_Bahnhof = True
     Bahnhoferstemal = 0
     Anfang = Anfang.pop(0)
     if Anfang == "哐" :
-        Geschwindigkeit =0
+        Geschwindigkeit = 0
         return Geschwindigkeit
-    for alles in range(len(Geräusche)):
-        teil_von_Geräusche = Geräusche.pop(0)
+    
+    for GeräuschIndex in range(len(Geräusche)):
+        teil_von_Geräusche = Geräusche[GeräuschIndex]
         
         if teil_von_Geräusche == "呜":
             Bahnhoferstemal = Bahnhoferstemal + 1
@@ -34,7 +34,6 @@ def length_of_railway(sounds):
             else:
                 pass                
                 
-                
-        if len(Geräusche) == 0:
-            return Geschwindigkeit
+        
+    return Geschwindigkeit
         

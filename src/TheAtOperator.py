@@ -1,23 +1,20 @@
 def evaluate(equation):
     equation = equation
-    testeq = list(equation)
-    nutzlos = testeq.pop()
-    Prüfen = testeq.pop()
-    modeq = "".join(equation.split()) #1@1
-    ls = list(equation)
-    if Prüfen == "-":
-        a = ls.pop()
-        a = ls.pop()+  a 
-    print(a)
-    b = ls.pop()
-    a = int(a)
-    b = int(b)
-    if b == 0:
-        return
+    x = "".join(equation.split())
+    moded_lis = x.replace("@", "")
+    ls1 = list(moded_lis)
     
-    Ergebnis = (a+b)+(a-b)+(a*b)+(a//b)
-    return Ergebnis
+    A = ls1.pop(0)
+    B = ls1.pop(0)
+    if A == "-":
+        print("Test")
+        A = "-" + ls1.pop(0)
+        
+    if B == "-":
+        print("Test2")
+        B = "-" + ls1.pop(0)
     
-#valuate("1 @ 1")
-#evaluate('3 @ 2')
-evaluate("1 @ 1 @ -4")
+    print(A, B)
+    print(ls1)
+    
+evaluate("-1 @ -1 @ 1")
