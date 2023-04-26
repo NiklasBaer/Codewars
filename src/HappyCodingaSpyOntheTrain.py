@@ -1,39 +1,53 @@
 def length_of_railway(sounds):
+    PfeifenTon = "呜"
+    StreckenTon = "哐"
     #Banhof = Rein or Raus 呜呜呜
     #Auf_Schiene = 10 or 20 哐当
     Geräusche = list(sounds)
-    Anfang = list(sounds)
+    
+    
     if sounds == [] or sounds == "":
+        
         return[]
-    print(Geräusche)
-    Geschwindigkeit = 0
-    Im_Bahnhof = True
-    Bahnhoferstemal = 0
-    Anfang = Anfang.pop(0)
-    if Anfang == "哐" :
-        Geschwindigkeit = 0
-        return Geschwindigkeit
+    
+    Anfang = Geräusche[0]
+    
+    Strecke = 0
+    
+    if Anfang == PfeifenTon:
+        
+        Im_Bahnhof = True
+        
+    else:
+        Im_Bahnhof = False
+    
+    if Anfang == StreckenTon :
+        
+        Strecke = 0
+        
+        return Strecke
     
     for GeräuschIndex in range(len(Geräusche)):
-        teil_von_Geräusche = Geräusche[GeräuschIndex]
         
-        if teil_von_Geräusche == "呜":
-            Bahnhoferstemal = Bahnhoferstemal + 1
+        AktuellerTon = Geräusche[GeräuschIndex]
+        
+        if AktuellerTon == PfeifenTon:
             
-            Im_Bahnhof = not True
-            if Bahnhoferstemal == 6:
-                Im_Bahnhof = not False
-                Bahnhoferstemal = 0
-        elif teil_von_Geräusche == "哐":
+            Im_Bahnhof = not Im_Bahnhof
+            
+           
+        elif AktuellerTon == StreckenTon:
         
 
-            if Im_Bahnhof == False:
-                Geschwindigkeit = Geschwindigkeit + 20
-            elif Im_Bahnhof == True:
-               Geschwindigkeit = Geschwindigkeit +10
-            else:
-                pass                
+            if Im_Bahnhof == True:
+                
+                Strecke = Strecke + 10
+                
+            elif Im_Bahnhof == False:
+                
+               Strecke = Strecke + 20
+                          
                 
         
-    return Geschwindigkeit
+    return Strecke 
         
