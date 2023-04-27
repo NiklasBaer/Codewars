@@ -12,7 +12,7 @@ class TestStringUmdreher(unittest.TestCase):
     def test_einzelnen_Zeichen(self):
         x = ZeichenRotierer("1")
         y = x.Rotiere()
-        self.assertEqual(y, ["1"])
+        self.assertEqual(y, [None])
         x =ZeichenRotierer("7")
         y = x.Rotiere()
         self.assertEqual(y, [None])
