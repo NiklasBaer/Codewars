@@ -1,4 +1,4 @@
-def evaluate(equation):
+def evaluate(equation): # "1 @ 1 @ 2"
     if equation == [""] or equation == "":
         return None
     Liste_ohne_Leerzeichen = "".join(equation.split())

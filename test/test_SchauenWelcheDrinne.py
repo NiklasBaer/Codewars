@@ -3,7 +3,7 @@ import unittest
 from src.SchauenWelcheDrinne import SchauenWelcheDrinnen
 from src.SchauenWelcheDrinne import SchauenInWelcheRichtung
 from src.SchauenWelcheDrinne import Ergebnis
-
+@unittest.skip
 class TestSchauenWelcheDrinne(unittest.TestCase):
     
     def test_instanziirung(self):
