@@ -10,6 +10,7 @@ def solution(roman):
     VerarbeiteteRomanZahl = Roman.Verarbeitung()
     return VerarbeiteteRomanZahl
 
+
 class VerarbeitungRoman():
 
     def __init__(self, input) -> None:
