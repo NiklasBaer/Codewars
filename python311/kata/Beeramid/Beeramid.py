@@ -1,5 +1,5 @@
 def beeramid(bonus, preis):
-    if bonus == 0 :
+    if bonus == 0:
         return ""
     if preis == 0:
         return ""
@@ -9,4 +9,3 @@ def beeramid(bonus, preis):
         level += 1
         Bier -= level**2
     return level
-
