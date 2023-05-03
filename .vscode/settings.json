@@ -1,12 +1,10 @@
 {
-    "[python]": {
-        "editor.defaultFormatter": "ms-python.autopep8"
-    },
-    "python.formatting.provider": "none",
+    "python.formatting.autopep8Path": "/usr/bin/autopep8",
+    "python.formatting.provider": "autopep8",
     "python.testing.unittestArgs": [
         "-v",
         "-s",
-        "./test",
+        "./python311",
         "-p",
         "test_*.py"
     ],
